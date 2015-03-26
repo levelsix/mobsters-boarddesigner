@@ -1,0 +1,12 @@
+//
+// Prefix header for all source files of the 'Test' target in the 'Test' project
+//
+
+#import <Availability.h>
+
+#ifdef __OBJC__
+#import <Cocoa/Cocoa.h>
+#import <Foundation/Foundation.h>
+#import "NSView+Coordinates.h"
+#import <SpriteKit/SpriteKit.h>
+#endif
