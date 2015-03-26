@@ -10,14 +10,14 @@
 	<string>LevelDesigner</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>5DD59B0989801E6CC59A9212BDCAC112737E6861</key>
+		<key>DA8FB0B4940A9C67AF85114ABF2758B3767BFC88</key>
 		<string>github.com:levelsix/mobsters-boarddesigner.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>LevelDesigner.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>5DD59B0989801E6CC59A9212BDCAC112737E6861</key>
+		<key>DA8FB0B4940A9C67AF85114ABF2758B3767BFC88</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>5DD59B0989801E6CC59A9212BDCAC112737E6861</string>
+	<string>DA8FB0B4940A9C67AF85114ABF2758B3767BFC88</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>5DD59B0989801E6CC59A9212BDCAC112737E6861</string>
+			<string>DA8FB0B4940A9C67AF85114ABF2758B3767BFC88</string>
 			<key>IDESourceControlWCCName</key>
 			<string>mobsters-boarddesigner</string>
 		</dict>

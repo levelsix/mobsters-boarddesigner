@@ -54,7 +54,4 @@ typedef enum {
 
 - (BOOL) isMovable;
 
-- (NSDictionary*) serialize;
-- (void) deserialize:(NSDictionary*)dic;
-
 @end
