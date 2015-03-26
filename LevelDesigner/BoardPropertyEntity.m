@@ -270,7 +270,8 @@
   
   if (PROP_EQUALS(bp.name, HOLE) ||
       PROP_EQUALS(bp.name, PASSABLE_HOLE) ||
-      PROP_EQUALS(bp.name, ORB_EMPTY)) {
+      PROP_EQUALS(bp.name, ORB_EMPTY) ||
+      PROP_EQUALS(bp.name, ORB_VINES)) {
     return NO;
   }
   
@@ -283,6 +284,33 @@
 
 - (NSString *) title {
   return @"Locked Orb";
+}
+
+@end
+
+@implementation OrbVinesPropertyEntity
+
+- (id) init {
+  return [super initWithName:ORB_VINES value:0];
+}
+
+- (BOOL)propertyCanExistSimultaneously:(BoardProperty *)bp {
+  
+  if (PROP_EQUALS(bp.name, HOLE) ||
+      PROP_EQUALS(bp.name, PASSABLE_HOLE) ||
+      PROP_EQUALS(bp.name, ORB_EMPTY) ||
+      PROP_EQUALS(bp.name, ORB_LOCKED))
+    return NO;
+  
+  return YES;
+}
+
+- (NSImage *)thumbnailIcon{
+  return [NSImage imageNamed:@"6lockedorb.png"];
+}
+
+- (NSString *) title {
+  return @"Vines";
 }
 
 @end

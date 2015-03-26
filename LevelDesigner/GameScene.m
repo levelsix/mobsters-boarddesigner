@@ -103,6 +103,8 @@
   
   [arr addObject:[[OrbLockedPropertyEntity alloc] init]];
   
+  [arr addObject:[[OrbVinesPropertyEntity alloc] init]];
+  
   [arr addObject:[[OrbEmptyPropertyEntity alloc] init]];
   
   [arr addObject:[[TileTypePropertyEntity alloc] initWithTileType:TileTypeJelly]];

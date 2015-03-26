@@ -65,6 +65,10 @@
 
 @end
 
+@interface OrbVinesPropertyEntity : BoardPropertyEntity
+
+@end
+
 @interface TileTypePropertyEntity : BoardPropertyEntity
 
 - (id) initWithTileType:(TileType)tileType;

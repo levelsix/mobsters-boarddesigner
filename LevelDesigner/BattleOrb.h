@@ -46,6 +46,8 @@ typedef enum {
 
 @property (assign, nonatomic) BOOL isLocked;
 
+@property (assign, nonatomic) BOOL isVines;
+
 // Special orb variables
 @property (assign, nonatomic) NSInteger bombCounter;
 @property (assign, nonatomic) NSInteger bombDamage;
