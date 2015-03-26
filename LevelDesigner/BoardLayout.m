@@ -259,6 +259,10 @@
     } else if ([prop.name isEqualToString:@"ORB_LOCKED"]) {
       orb.isLocked = YES;
       shouldCreate = YES;
+    } else if ([prop.name isEqualToString:@"ORB_VINES"]) {
+      orb.isLocked = YES;
+      orb.isVines = YES;
+      shouldCreate = YES;
     }
   }
   

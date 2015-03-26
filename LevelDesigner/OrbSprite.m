@@ -38,7 +38,10 @@
   [self addChild:self.orbSprite];
   
   if (_orb.isLocked) {
-    [self loadLockElements];
+    if (_orb.isVines)
+      [self loadVineElements];
+    else
+      [self loadLockElements];
   }
   
   if (_orb.isRandom && _orb.powerupType != PowerupTypeAllOfOneColor) {
@@ -53,6 +56,15 @@
 - (void) loadLockElements {
   SKSpriteNode *_lockedSprite = [SKSpriteNode spriteNodeWithImageNamed:@"6lockedorb.png"];
   _lockedSprite.zPosition = 1.f;
+  [self addChild:_lockedSprite];
+}
+
+- (void) loadVineElements {
+#warning temp code for placeholder art
+  SKSpriteNode *_lockedSprite = [SKSpriteNode spriteNodeWithImageNamed:@"6lockedorb.png"];
+  _lockedSprite.zPosition = 1.f;
+  _lockedSprite.colorBlendFactor = 1.f;
+  _lockedSprite.color = [NSColor greenColor];
   [self addChild:_lockedSprite];
 }
 
