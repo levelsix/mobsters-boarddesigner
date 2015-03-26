@@ -210,7 +210,8 @@
       PROP_EQUALS(bp.name, PASSABLE_HOLE) ||
       PROP_EQUALS(bp.name, ORB_COLOR) ||
       PROP_EQUALS(bp.name, ORB_POWERUP) ||
-      PROP_EQUALS(bp.name, ORB_LOCKED)) {
+      PROP_EQUALS(bp.name, ORB_LOCKED) ||
+      PROP_EQUALS(bp.name, ORB_VINES)) {
     return NO;
   }
   
@@ -243,7 +244,8 @@
       PROP_EQUALS(bp.name, ORB_EMPTY) ||
       PROP_EQUALS(bp.name, ORB_LOCKED) ||
       PROP_EQUALS(bp.name, SPAWN_TILE) ||
-      PROP_EQUALS(bp.name, NOT_SPAWN_TILE)) {
+      PROP_EQUALS(bp.name, NOT_SPAWN_TILE) ||
+      PROP_EQUALS(bp.name, ORB_VINES)) {
     return NO;
   }
   
