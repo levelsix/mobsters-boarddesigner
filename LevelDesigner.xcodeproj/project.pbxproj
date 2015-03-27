@@ -86,6 +86,7 @@
 		29AE754C1A6E47E200264070 /* BoardPropertyEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 29AE754B1A6E47E200264070 /* BoardPropertyEntity.m */; };
 		29AE754E1A6F133800264070 /* 6passablearrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 29AE754D1A6F133800264070 /* 6passablearrow.png */; };
 		29AE75511A6F1AD500264070 /* BoardConfigWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 29AE75501A6F1AD500264070 /* BoardConfigWindow.m */; };
+		6B7F4DF41AC60C4000CE5C0A /* bringdownarrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B7F4DF31AC60C4000CE5C0A /* bringdownarrow@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -196,6 +197,7 @@
 		29AE754D1A6F133800264070 /* 6passablearrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6passablearrow.png; sourceTree = "<group>"; };
 		29AE754F1A6F1AD500264070 /* BoardConfigWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoardConfigWindow.h; sourceTree = "<group>"; };
 		29AE75501A6F1AD500264070 /* BoardConfigWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoardConfigWindow.m; sourceTree = "<group>"; };
+		6B7F4DF31AC60C4000CE5C0A /* bringdownarrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bringdownarrow@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -336,6 +338,7 @@
 		29AE74761A6E22A600264070 /* 6 Orbs */ = {
 			isa = PBXGroup;
 			children = (
+				6B7F4DF31AC60C4000CE5C0A /* bringdownarrow@2x.png */,
 				29AE754D1A6F133800264070 /* 6passablearrow.png */,
 				29AE74DE1A6E28EB00264070 /* 6allcocktail.png */,
 				29AE74DF1A6E28EB00264070 /* 6boardgoo.png */,
@@ -514,6 +517,7 @@
 				29AE753B1A6E28EC00264070 /* 6waterbomb.png in Resources */,
 				29AE74311A6E0C8B00264070 /* MainMenu.xib in Resources */,
 				29AE75221A6E28EC00264070 /* 6firesideways.png in Resources */,
+				6B7F4DF41AC60C4000CE5C0A /* bringdownarrow@2x.png in Resources */,
 				29AE753C1A6E28EC00264070 /* 6watergrenade.png in Resources */,
 				29AE75341A6E28EC00264070 /* 6rockbomb.png in Resources */,
 				29AE75371A6E28EC00264070 /* 6rockorb.png in Resources */,
@@ -754,6 +758,7 @@
 				29AE74421A6E0C8B00264070 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		29AE74431A6E0C8B00264070 /* Build configuration list for PBXNativeTarget "LevelDesignerTests" */ = {
 			isa = XCConfigurationList;
@@ -762,6 +767,7 @@
 				29AE74451A6E0C8B00264070 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

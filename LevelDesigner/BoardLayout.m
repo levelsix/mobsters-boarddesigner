@@ -49,6 +49,7 @@
   TileType typeTop = TileTypeNormal;
   TileType typeBottom = TileTypeNormal;
   BOOL shouldSpawnInitialSkill = NO;
+  BOOL bottomFallsOut = row == 0;
   
   
   for (BoardProperty *prop in properties) {
@@ -66,10 +67,14 @@
       typeBottom = prop.value;
     } else if ([prop.name isEqualToString:INITIAL_SKILL]) {
       shouldSpawnInitialSkill = YES;
+    } else if ([prop.name isEqualToString:BOTTOM_FALL]) {
+      bottomFallsOut = YES;
+    } else if ([prop.name isEqualToString:NOT_BOTTOM_FALL]){
+      bottomFallsOut = NO;
     }
   }
   
-  _tiles[column][row] = [[BattleTile alloc] initWithColumn:column row:row typeTop:typeTop typeBottom:typeBottom isHole:isHole canPassThrough:canPassThrough canSpawnOrbs:canSpawnOrbs shouldSpawnInitialSkill:shouldSpawnInitialSkill];
+  _tiles[column][row] = [[BattleTile alloc] initWithColumn:column row:row typeTop:typeTop typeBottom:typeBottom isHole:isHole canPassThrough:canPassThrough canSpawnOrbs:canSpawnOrbs shouldSpawnInitialSkill:shouldSpawnInitialSkill bottomFallsOut:bottomFallsOut];
 }
 
 - (BattleTile *)tileAtColumn:(NSInteger)column row:(NSInteger)row {

@@ -59,6 +59,14 @@
         line.position = ccp((i+0.5)*tileSize, (j+1)*tileSize);
       }
       
+      if (tile.bottomFallsOut) {
+        SKSpriteNode *bottom = [SKSpriteNode spriteNodeWithImageNamed:@"bringdownarrow@2x.png"];
+        
+        [self addChild:bottom];
+        bottom.zPosition = 4.f;
+        bottom.position = ccp((i + 0.5)*tileSize, j * tileSize);
+      }
+      
       if (tile.shouldSpawnInitialSkill) {
         SKShapeNode *rect = [SKShapeNode shapeNodeWithRectOfSize:CGSizeMake(tileSize, tileSize) cornerRadius:2];
         [self addChild:rect];

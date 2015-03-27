@@ -117,6 +117,9 @@
   [arr addObject:[[SpawnTilePropertyEntity alloc] initWithShouldSpawn:YES]];
   [arr addObject:[[SpawnTilePropertyEntity alloc] initWithShouldSpawn:NO]];
   
+  [arr addObject:[[BottomFallPropertyEntity alloc] initWithShouldFall:YES]];
+  [arr addObject:[[BottomFallPropertyEntity alloc] initWithShouldFall:NO]];
+  
   self.entitiesList = arr;
 }
 

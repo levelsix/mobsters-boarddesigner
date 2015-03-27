@@ -88,3 +88,7 @@
 @interface ClearTilePropertyEntity : NSObject <BoardPropertyEntity>
 
 @end
+
+@interface BottomFallPropertyEntity : BoardPropertyEntity
+- (id) initWithShouldFall:(BOOL)shouldFall;
+@end

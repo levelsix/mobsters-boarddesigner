@@ -245,7 +245,8 @@
       PROP_EQUALS(bp.name, ORB_LOCKED) ||
       PROP_EQUALS(bp.name, SPAWN_TILE) ||
       PROP_EQUALS(bp.name, NOT_SPAWN_TILE) ||
-      PROP_EQUALS(bp.name, ORB_VINES)) {
+      PROP_EQUALS(bp.name, ORB_VINES) ||
+      PROP_EQUALS(bp.name, BOTTOM_FALL)) {
     return NO;
   }
   
@@ -366,7 +367,8 @@
   if (PROP_EQUALS(bp.name, HOLE) ||
       PROP_EQUALS(bp.name, PASSABLE_HOLE) ||
       PROP_EQUALS(bp.name, SPAWN_TILE) ||
-      PROP_EQUALS(bp.name, NOT_SPAWN_TILE)) {
+      PROP_EQUALS(bp.name, NOT_SPAWN_TILE) ||
+      PROP_EQUALS(bp.name, BOTTOM_FALL)) {
     return NO;
   }
   
@@ -424,6 +426,36 @@
 
 - (NSString *)title {
   return @"Clear Tile";
+}
+
+@end
+
+@implementation BottomFallPropertyEntity
+
+- (id)initWithShouldFall:(BOOL)shouldFall{
+  return [super initWithName:shouldFall ? BOTTOM_FALL : NOT_BOTTOM_FALL value:0];
+}
+
+- (BOOL)propertyCanExistSimultaneously:(BoardProperty *)bp{
+  
+  if (PROP_EQUALS(bp.name, HOLE) ||
+      PROP_EQUALS(bp.name, PASSABLE_HOLE) ||
+      PROP_EQUALS(bp.name, SPAWN_TILE) ||
+      PROP_EQUALS(bp.name, BOTTOM_FALL) ||
+      PROP_EQUALS(bp.name, NOT_BOTTOM_FALL))
+  {
+    return NO;
+  }
+  
+  return YES;
+}
+
+- (NSImage *) thumbnailIcon {
+  return nil;
+}
+
+- (NSString *)title{
+  return PROP_EQUALS(self.name, BOTTOM_FALL) ? @"Bottom Fall Out Tile" : @"Not Bottom Fall Out Tile";
 }
 
 @end
